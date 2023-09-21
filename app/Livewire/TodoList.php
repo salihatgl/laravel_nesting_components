@@ -7,10 +7,13 @@ use App\Models\todos;
 
 class TodoList extends Component
 {
-    public $todo;
+
+
+    public $content;
+    
     public function render()
     {
-        $this->todo = todos::all();
+        
         return view('livewire.todo-list');
     }
 }
